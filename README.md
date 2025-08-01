@@ -14,22 +14,6 @@ A Terraform module to enable and manage AWS Security Hub with support for:
 
 ___
 
-
-##  Features
-- Enable Security Hub in the current region
-
--  Enable default and custom security standards
-
--  Set up organization admin account and auto-enable member accounts
-
--  Invite and accept Security Hub member accounts
-
--  Configure SNS alerts and EventBridge rules for findings
-
--  Enable Finding Aggregator for multi-region visibility
-
-___
-
 ## Providers
 
 | Name                                              | Version  |
@@ -40,6 +24,7 @@ ___
 
 ## Architecture
 
+<img width="788" height="574" alt="image" src="https://github.com/user-attachments/assets/95d3a3cc-fc92-425c-b3c5-d716d2cfaf10" />
 
 
 
@@ -83,6 +68,8 @@ module "security_hub" {
   finding_aggregator_linking_mode = "ALL_REGIONS"
 }
 ```
+> **Note:**  
+> The above example demonstrates how to use the module. All variables, resources, and outputs used here are already defined within this module.
 
 
 ## Resource

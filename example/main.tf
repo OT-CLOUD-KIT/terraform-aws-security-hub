@@ -1,5 +1,5 @@
 module "security_hub" {
-  source = "../" 
+  source = "git@github.com:OT-CLOUD-KIT/terraform-aws-security-hub.git?ref=Feature" 
   enabled                           = var.enabled
   enable_default_standards         = var.enable_default_standards
   enable_standards                 = var.enable_standards
